@@ -1,6 +1,8 @@
 
 import Auth from './pages/Auth';
 import Layout from './pages/layout';
+import Profile from './pages/Profile';
+
 import { Routes , Route } from 'react-router-dom';
 import ToastProvider from './Providers/ToastProviders';
 
@@ -11,6 +13,7 @@ function App() {
       <Routes>
          <Route index element={<Layout/>} />
          <Route path="/auth" element={<Auth/>} />
+         <Route path="/profile" element={<Profile/>} />
       </Routes>
     </div>
     

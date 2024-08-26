@@ -48,8 +48,6 @@ function Auth() {
       }
       
       setName('');
-      setEmail('');
-      setPassword('');
 
       setVersion((current) => !current);
 
@@ -67,9 +65,9 @@ function Auth() {
       }).then(() => {
         handleLimit('Login Successfully' , 'success');
       })
-      // setName('');
-      // setEmail('');
-      // setPassword('');
+      setName('');
+      setEmail('');
+      setPassword('');
 
       Navigate('/profile');
 

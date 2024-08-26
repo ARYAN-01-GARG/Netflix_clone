@@ -4,7 +4,7 @@ function Input(prop) {
   return (
     <div className="w-full relative">
       <input 
-        id={prop.id}
+        id={prop.label}
         value={prop.value}
         onChange={(e) => prop.setValue(e.target.value)}
         type={prop.type}
@@ -23,6 +23,7 @@ function Input(prop) {
             pl-5" 
       />
       <label
+        htmlFor={prop.label}
         className="
         text-white/70 
         text-lg
